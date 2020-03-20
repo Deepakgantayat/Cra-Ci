@@ -21,7 +21,7 @@ steps:
         key: v1-dependencies-{{ checksum "package.json" }}
     
       - run: yarn test
-
+    ...
       - save_cache:
   paths:
     - node_modules
